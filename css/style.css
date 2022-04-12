@@ -327,10 +327,11 @@ input[type="submit"] {
     display: flex;
 }
 
-.about_right dt span {
+.about_right dt > span {
     min-width: 100px;
-    text-align-last: justify;
     display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about_right dd {
@@ -934,7 +935,7 @@ footer {
         margin-bottom: 6px;
     }
 
-    .about_right dt span {
+    .about_right dt > span {
         min-width: auto;
     }
 
