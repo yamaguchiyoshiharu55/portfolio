@@ -318,16 +318,17 @@ input[type="submit"] {
 }
 
 .about_right dt {
-    width: 17.8%;
+    width: 18%;
     color: #417373;
     font-weight: bold;
     margin-bottom: 15px;
     line-height: 1.5;
     font-size: 18px;
+    display: flex;
 }
 
 .about_right dt span {
-    width: 84.61%;
+    min-width: 100px;
     text-align-last: justify;
     display: inline-block;
 }
@@ -346,6 +347,15 @@ input[type="submit"] {
     line-height: 1.75;
     color: #417373;
 }
+
+/*about 調整*/
+@media screen and (max-width: 960px) {
+    .about_right dd {
+        width: 70%;
+    }
+}
+
+
 
 /* work news共通*/
 .sp_more {
@@ -538,12 +548,14 @@ input[type="submit"] {
     margin-bottom: 14px;
     box-sizing: border-box;
     height: 40px;
+    font-size: 16px;
 }
 
 .contact_form textarea {
     width: 100%;
     height: 230px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .form_left {
@@ -915,7 +927,7 @@ footer {
     }
 
     .about_right dt span {
-        width: 93px;
+        min-width: auto;
     }
 
     .about_right dd {
